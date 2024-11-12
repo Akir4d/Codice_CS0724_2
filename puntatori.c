@@ -12,7 +12,7 @@ void scriviVettore(int *ptr)
 void leggiVettore(int *ptr)
 {
     for (int i=0; i<10; i++){
-        printf("\nElemento n[%d] = %d (zona memoria 0x%x)", i, *ptr, ptr);
+        printf("\nn[%d] = 0x%x = %d", i, ptr, *ptr);
         ptr++;
     }
 }
