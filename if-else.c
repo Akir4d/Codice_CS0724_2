@@ -13,7 +13,7 @@ int main()
     scanf("%d", &secondo);
 
     risultato = primo + secondo;
-    
+
     printf("\n%d + %d = %d\n", primo, secondo, risultato);
     printf("\n%d - %d = %d\n", primo, secondo, primo - secondo);
     printf("\n%d * %d = %d\n", primo, secondo, primo * secondo);
@@ -27,6 +27,6 @@ int main()
     {
         printf("\nHai appena sbloccato una gemma dell'infinito!");
     }
-
+    
     return 0;
 }
