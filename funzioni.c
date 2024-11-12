@@ -13,6 +13,6 @@ float divisione(int a, int b){
 
 int main(){
     printf("\nSomma: %d", somma(3, 4));
-    printf("\nDiviso: %2.f", divisione(3, 4));
+    printf("\nDiviso: %f", divisione(3, 4));
     return 0;
 }
