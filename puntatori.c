@@ -12,7 +12,7 @@ void scriviVettore(int *ptr)
 void leggiVettore(int *ptr)
 {
     for (int i=0; i<10; i++){
-        printf("\nn[%d] = 0x%x = %d", i, ptr, *ptr);
+        printf("\nn[%d] = mem[0x%x] = %d", i, ptr, *ptr);
         ptr++;
     }
 }
