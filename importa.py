@@ -1,5 +1,5 @@
 #from funzioni import saluta
-from funzionle.funzioni import *
+from libreria.funzioni import *
 
 saluta("Antonio")
 print(saluta_antonio())
