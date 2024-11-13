@@ -1,5 +1,6 @@
 #from funzioni import saluta
-from libreria.funzioni import *
+from libreria import funzioni, funzioni2
 
-saluta("Antonio")
-print(saluta_antonio())
+
+funzioni.saluta("Antonio", "Hey")
+print(funzioni2.saluta("Pippo"))
