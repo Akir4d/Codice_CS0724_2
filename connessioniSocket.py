@@ -9,7 +9,7 @@ print("Sto attendendo una connessione...")
 connection, address = s.accept()
 print("Ho stabilito una connessione con: ", address)
 while True:
-    connection.sendall("C: ")
+    connection.sendall(b"C: ")
     data = connection.recv(1024)
     if not data: break
     connection.sendall(b"Ho ricevuto il messaggio! \n")
