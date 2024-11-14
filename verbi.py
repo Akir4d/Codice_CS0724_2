@@ -1,4 +1,5 @@
 import http.client
+#from urllib.parse import urlparse
 
 host = input("Inserisci host/IP del sistema target: ")
 port = input("Inserisci la porta del sistema target (default:80): ")
