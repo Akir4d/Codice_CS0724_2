@@ -7,7 +7,7 @@ lport = int(portrange.split('-')[0])
 hport = int(portrange.split('-')[1])
 
 print("Scansione in corso di", target, "dalla porta", lport, "alla porta", hport)
-chiuse = ""
+chiuse = []
 for port in range(lport, hport+1):
     s = so.socket(so.AF_INET, so.SOCK_STREAM)
     s.settimeout(0.01)
@@ -15,7 +15,10 @@ for port in range(lport, hport+1):
     if(status == 0):
         print('*** Porta', port, '- APERTA ***')
     else:
-        chiuse = f"{chiuse} {port}"
+        chiuse.append(port)
 
-print(f"Porte chiuse: {chiuse}")
+if(len(chiuse) > 0):
+    yesno=input(f"Trovate {len(chiuse)-1} chiuse, le vuoi visulizzare (s/n)? ")
+    if(yesno.lower().startswith("s")):
+        print(f"Porte chiuse: {chiuse}")
 s.close()
