@@ -9,7 +9,8 @@ s.bind((SRV_ADDR, SRV_PORT))
 s.listen(1)
 print("Sto attendendo una connessione...")
 connection, address = s.accept()
-print("Ho stabilito una connessione con: ", address)
+ip_client, porta_client = address
+print(f"Ho stabilito una connessione con {ip_client} sulla porta {porta_client} ")
 percorso_partenza = os.getcwd() 
 while True:
     prompt = "["+percorso_partenza + "]$ "
